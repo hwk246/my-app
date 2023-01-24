@@ -1,7 +1,7 @@
 import "./App.css";
 import { Link, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
-import BookList from "./components/BookList";
+import FavoriteSites from "./components/FavoriteSites";
 
 function App() {
   return (
@@ -14,15 +14,15 @@ function App() {
             </Link>
           </li>
           <li>
-            <Link className="link" to="/booklist">
-              BookList
+            <Link className="link" to="/favorite">
+              Favorite
             </Link>
           </li>
         </ul>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/booklist" element={<BookList />} />
+        <Route path="/favorite" element={<FavoriteSites />} />
       </Routes>
     </div>
   );
