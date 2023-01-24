@@ -20,8 +20,16 @@ function FavoriteSites() {
         NGINX GUNICORN REACT FLASK
       </a>
       <p>
-        Deze man maakt react flask app en deployed deze. Eerst als een statische
-        pagina met alleen nginx daarn met flask en gunicorn
+        Deze man (Miguel Grinberg) maakt react flask app en deployed deze. Eerst
+        als een statische pagina met alleen nginx daarn met flask en gunicorn
+      </p>
+
+      <a href="https://www.youtube.com/watch?v=Q2eafQYgglM&list=RDCMUCZJiXG_auf0o7LByqC1LHuQ&start_radio=1&rv=Q2eafQYgglM&t=809">
+        Miguel Grinberg Mix
+      </a>
+      <p>
+        Een heleboel nuttige informatie over voornamelijk Flask en React
+        gebruik. oa: deployen, Flask als API, Flask websocket etc.
       </p>
 
       <a href="https://www.youtube.com/watch?v=u2PxRxhnplM">
