@@ -1,6 +1,7 @@
 function FavoriteSites() {
   return (
-    <>
+    <div className="favor-site">
+      <h1>Favorite Sites</h1>
       <a href="https://raspberrytips.com/login-as-root/">login as root</a>
       <p>
         Bij opstarten raspberry de root user mogelijkheid is standaard
@@ -39,7 +40,7 @@ function FavoriteSites() {
         Security is belangrijk zeker als je router openzet (port forwarding)
         voor web acces van de Raspberrypi!!!
       </p>
-    </>
+    </div>
   );
 }
 
