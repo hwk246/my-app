@@ -40,6 +40,14 @@ function FavoriteSites() {
         Security is belangrijk zeker als je router openzet (port forwarding)
         voor web acces van de Raspberrypi!!!
       </p>
+      <a href="https://www.youtube.com/watch?v=Rctz-kCvuwE">
+        Websocket for Flask
+      </a>
+      <p>
+        websocket server with flask. No async webserver needed. It works with
+        Gunicorn in deployment. ( multiple workers and threads to server
+        multiple clients) Intersting for chat, mulitplayer games etc
+      </p>
     </div>
   );
 }

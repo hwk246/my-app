@@ -39,3 +39,12 @@ li:hover {
   width: 70%;
   font-size: 1.2em;
 }
+.home-img img {
+  margin: auto;
+  height: 300px;
+  transition: 10000ms;
+}
+
+.home-img img:hover {
+  transform: rotateY(360deg);
+}
