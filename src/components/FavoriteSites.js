@@ -48,6 +48,9 @@ function FavoriteSites() {
         Gunicorn in deployment. ( multiple workers and threads to server
         multiple clients) Intersting for chat, mulitplayer games etc
       </p>
+      <a href="https://www.freecodecamp.org/news/backend-web-development-with-python-full-course/">
+        python full course
+      </a>
     </div>
   );
 }

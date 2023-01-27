@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Hamburger from "hamburger-react";
 import { Component } from "react";
 
 class Nav extends Component {
@@ -10,40 +9,36 @@ class Nav extends Component {
   }
 
   activateMenu = () => {
-    const menuDiv = document.querySelector("div .menu");
-    menuDiv.classList.toggle("hide-menu");
+    const menuUl = document.querySelector("ul.menu");
+    menuUl.classList.toggle("unhide-menu");
   };
 
   render() {
     return (
-      <>
-        <Hamburger
-          onToggle={this.activateMenu}
-          direction="left"
-          size={30}
-          color="black"
-          duration={0.2}
-        />
-        <div className="menu">
-          <ul>
-            <li>
-              <Link className="link" to="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link className="link" to="/favorite">
-                Favorite
-              </Link>
-            </li>
-            <li>
-              <Link className="link" to="/dotSH">
-                DotSH
-              </Link>
-            </li>
-          </ul>
+      <div>
+        <div className="hamburger" onClick={this.activateMenu}>
+          <span className="burger-line-upper"></span>
+          <span className="burger-line-middle"></span>
+          <span className="burger-line-lower"></span>
         </div>
-      </>
+        <ul className="menu" onClick={this.activateMenu}>
+          <li>
+            <Link className="link" to="/">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to="/favorite">
+              Favorite
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to="/dotSH">
+              DotSH
+            </Link>
+          </li>
+        </ul>
+      </div>
     );
   }
 }

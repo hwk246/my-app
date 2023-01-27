@@ -10,11 +10,21 @@ h1 {
   font-size: 3em;
 }
 
-ul {
+ul.menu {
+  background: rgba(140, 151, 255, 0.8);
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 0px 20px 20px 0px;
   display: flex;
   flex-direction: column;
-
   align-items: center;
+  width: 20%;
+  left: -200px;
+  transition: 500ms;
+}
+
+.menu.unhide-menu {
+  left: -35px;
 }
 
 li {
@@ -29,6 +39,8 @@ li:hover {
 .link {
   text-decoration: none;
   font-size: 1.2em;
+  font-weight: bold;
+  color: black;
 }
 
 .favor-site {
@@ -39,19 +51,24 @@ li:hover {
 .home-img img {
   margin: auto;
   height: 300px;
-  transition: 10000ms;
+  transition: 5000ms;
 }
 
 .home-img img:hover {
-  transform: rotateY(360deg);
+  transform: rotateY(180deg);
 }
 
-.menu {
-  visibility: hidden;
-  position: absolute;
-  background-color: rgb(197, 197, 250);
+.hamburger {
+  display: flex;
+  flex-direction: column;
 }
 
-.menu.hide-menu {
-  visibility: visible;
+.burger-line-upper,
+.burger-line-middle,
+.burger-line-lower {
+  width: 50px;
+  height: 6px;
+  margin: 3px;
+  border-radius: 3px;
+  background: black;
 }
