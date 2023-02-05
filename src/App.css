@@ -1,4 +1,5 @@
 body {
+  margin: 10px;
   background-color: #c3e2fe83;
 }
 
@@ -18,8 +19,8 @@ ul.menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 20%;
-  left: -200px;
+  width: 200px;
+  left: -300px;
   transition: 500ms;
 }
 
@@ -66,9 +67,31 @@ li:hover {
 .burger-line-upper,
 .burger-line-middle,
 .burger-line-lower {
-  width: 50px;
+  width: 45px;
   height: 6px;
-  margin: 3px;
+  margin: 2px;
   border-radius: 3px;
   background: black;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: auto;
+}
+
+.register-form Input {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.api-input {
+  font-size: 1.5em;
+}
+
+.register-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }

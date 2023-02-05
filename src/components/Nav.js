@@ -37,6 +37,17 @@ class Nav extends Component {
               DotSH
             </Link>
           </li>
+          <li>
+            <Link className="link" to="/api">
+              API
+            </Link>
+          </li>
+
+          <li>
+            <Link className="link" to="/register">
+              Register
+            </Link>
+          </li>
         </ul>
       </div>
     );
